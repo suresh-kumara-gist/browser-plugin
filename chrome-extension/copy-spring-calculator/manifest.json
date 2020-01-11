@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Copy spring calculator",
+  "version": "0.1",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.acxesspring.com/free-spring-calculator-download.html"
+      ],
+      "js": ["content.js"]
+    }
+  ],
+  "background":
+  {
+      "scripts": ["node_modules/jquery/dist/jquery.min.js", "jquery.table2excel.min.js"]
+  },
+  "browser_action": {
+    "default_icon": "icon.png"
+  }
+}
